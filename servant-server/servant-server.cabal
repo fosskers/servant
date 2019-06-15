@@ -27,7 +27,7 @@ tested-with:
   GHC ==8.0.2
    || ==8.2.2
    || ==8.4.4
-   || ==8.6.4
+   || ==8.6.5
 
 extra-source-files:
   CHANGELOG.md
@@ -80,7 +80,7 @@ library
   -- strict dependency as we re-export 'servant' things.
   build-depends:
       servant             >= 0.16     && < 0.17.1
-    , http-api-data       >= 0.4.1    && < 0.4.2
+    , http-api-data       >= 0.4      && < 0.5
 
   -- Other dependencies: Lower bound around what is in the latest Stackage LTS.
   -- Here can be exceptions if we really need features from the newer versions.
