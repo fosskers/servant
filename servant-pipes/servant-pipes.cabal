@@ -36,7 +36,7 @@ library
       base          >=4.9      && <5
     , bytestring    >=0.10.8.1 && <0.11
     , pipes         >=4.3.9    && <4.4
-    , pipes-safe    >=2.3.1    && <2.4
+    , pipes-safe    >=2.2.9    && <2.4
     , mtl           >=2.2.2    && <2.3
     , monad-control >=1.0.2.3  && <1.1
     , servant       >=0.15     && <0.17
@@ -56,7 +56,7 @@ test-suite example
     , bytestring
     , http-media
     , servant
-    , pipes 
+    , pipes
     , pipes-safe
     , servant-pipes
     , pipes-bytestring  >=2.1.6    && <2.2

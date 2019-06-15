@@ -252,6 +252,10 @@ openTestSocket = do
   listen s 1
   port <- socketPort s
   return (fromIntegral port, s)
+#if !MIN_VERSION_network(2,7,0)
+  where
+    defaultPort = aNY_PORT
+#endif
 
 pathGen :: Gen (NonEmptyList Char)
 pathGen = fmap NonEmpty path

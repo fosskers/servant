@@ -98,14 +98,14 @@ library
   -- We depend (heavily) on the API of these packages:
   -- i.e. re-export, or allow using without direct dependency
   build-depends:
-      http-api-data          >= 0.4      && < 0.5
+      http-api-data          >= 0.3.8.1  && < 0.5
     , singleton-bool         >= 0.1.4    && < 0.1.5
 
   -- Other dependencies: Lower bound around what is in the latest Stackage LTS.
   -- Here can be exceptions if we really need features from the newer versions.
   build-depends:
       base-compat            >= 0.10.5   && < 0.11
-    , aeson                  >= 1.4.1.0  && < 1.5
+    , aeson                  >= 1.3.1.1  && < 1.5
     , attoparsec             >= 0.13.2.2 && < 0.14
     , bifunctors             >= 5.5.3    && < 5.6
     , case-insensitive       >= 1.2.0.11 && < 1.3
@@ -114,9 +114,9 @@ library
     , http-types             >= 0.12.2   && < 0.13
     , mmorph                 >= 1.1.2    && < 1.2
     , network-uri            >= 2.6.1.0  && < 2.7
-    , QuickCheck             >= 2.12.6.1 && < 2.14
+    , QuickCheck             >= 2.11.3   && < 2.14
     , string-conversions     >= 0.4.0.1  && < 0.5
-    , tagged                 >= 0.8.6    && < 0.9
+    , tagged                 >= 0.8.5    && < 0.9
     , vault                  >= 0.3.1.2  && < 0.4
 
   hs-source-dirs: src
@@ -170,12 +170,12 @@ test-suite spec
 
   -- Additonal dependencies
   build-depends:
-      hspec                >= 2.6.0    && < 2.8
-    , QuickCheck           >= 2.12.6.1 && < 2.14
+      hspec                >= 2.5.5    && < 2.8
+    , QuickCheck           >= 2.11.3   && < 2.14
     , quickcheck-instances >= 0.3.19   && < 0.4
 
   build-tool-depends:
-    hspec-discover:hspec-discover >= 2.6.0 && < 2.8
+    hspec-discover:hspec-discover >= 2.5.5 && < 2.8
 
 test-suite doctests
   build-depends:
@@ -185,7 +185,7 @@ test-suite doctests
 
   -- We test Links failure with doctest, so we need extra dependencies
   build-depends:
-      hspec                >= 2.6.0  && < 2.8
+      hspec                >= 2.5.5  && < 2.8
 
   type: exitcode-stdio-1.0
   main-is: test/doctests.hs

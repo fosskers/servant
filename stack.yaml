@@ -1,4 +1,5 @@
-resolver: lts-13.25  # GHC 8.6.5
+# resolver: lts-13.25  # GHC 8.6.5
+resolver: lts-12.26  # GHC 8.4.4
 
 packages:
   - servant/
